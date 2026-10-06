@@ -102,18 +102,17 @@
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30"></div>
 
         <div class="relative z-10 px-4 max-w-3xl mx-auto text-white flex flex-col items-center">
-            <span class="font-en text-lg md:text-2xl tracking-[0.3em] uppercase text-amber-200/90 mb-3">
-                Wedding Invitation
-            </span>
+           
             <h1 class="font-en text-4xl sm:text-6xl md:text-7xl font-light tracking-wide mb-6 drop-shadow-md">
                 禹丞 <span class="italic text-morandi-tan font-serif">&amp;</span> 子尤
             </h1>
-            <div class="w-16 h-[1px] bg-morandi-tan mb-6"></div>
-            <p class="text-lg sm:text-2xl font-serifTC tracking-widest text-stone-100 mb-8 font-light">
-                「把平凡的日子，過成我們最喜歡的樣子。」
-            </p>
+            
             <p class="font-en text-lg md:text-xl tracking-widest text-amber-100/80 uppercase">
                 2026 . 12 . 12
+            </p>
+            <div class="w-16 h-[1px] bg-morandi-tan mb-6"></div>
+            <p class="text-base sm:text-2xl font-serifTC tracking-widest text-stone-100 mb-8 font-light max-w-xs sm:max-w-none leading-relaxed">
+                「相伴攜手一生<br class="sm:hidden">。」
             </p>
 
             <a href="#countdown" class="mt-12 text-white/70 hover:text-white transition-colors duration-300 animate-bounce">
@@ -180,7 +179,10 @@
 
                     <div class="prose prose-stone max-w-xl mx-auto leading-relaxed text-stone-600 font-light space-y-4 text-justify sm:text-center">
                         <p>
-                            從相遇、相知，到決定攜手走過往後的每一段日子，我們很珍惜一路上有你們的 陪伴與祝福。在這個特別的日子裡，誠摯邀請你與我們一同分享這份喜悅    ，見證我們人生中重要而幸福的時刻。
+                            從相遇、相知，到決定攜手走過往後的每一段日子，我們很珍惜一路上有你們的陪伴與祝福。
+                        </p>
+                        <p>
+                            在這個特別的日子裡，誠摯邀請你與我們一同分享這份喜悅，見證我們人生中重要而幸福的時刻。
                         </p>
                         <p class="italic text-morandi-accent font-serifTC">
                             「2026.12.12（六）期待與你相見 ♡」
@@ -210,7 +212,7 @@
                         </div>
                         <h3 class="text-xl font-semibold text-morandi-dark mb-4 tracking-wider text-center">日期與時間</h3>
                         <p class="text-stone-700 font-medium text-lg mb-1 text-center">2026 年 12 月 12 日 (星期六)</p>
-                        <p class="text-stone-600 mb-4 text-center">午宴入場：12:00 PM | 準時開席：12:30 PM</p>
+                        <p class="text-stone-600 mb-4 text-center text-xs sm:text-sm no-wrap">午宴入場：11:30 AM <span class="text-morandi-tan">|</span> 準時開席：12:00 PM</p>
                     </div>
                     <div class="pt-4 border-t border-stone-100 text-center">
                         <p class="text-xs text-stone-400 uppercase font-en tracking-widest">Date &amp; Time</p>
@@ -235,21 +237,22 @@
                 </div>
 
                 <div class="space-y-3" id="transport-accordion">
+                    <!-- 輕軌／步行 -->
                     <div class="border border-stone-200 rounded-xl overflow-hidden">
-                        <button type="button" class="w-full px-5 py-4 text-left font-medium text-stone-700 flex justify-between items-center bg-stone-50/50 hover:bg-stone-50 transition-colors accordion-toggle">
-                            <span class="flex items-center space-x-2">
-                                <i class="fa-solid fa-train-subway text-morandi-sage"></i>
-                                <span>輕軌/步行路線</span>
+                        <button type="button" class="w-full px-4 sm:px-5 py-4 text-left font-medium text-stone-700 flex justify-between items-center bg-stone-50/50 hover:bg-stone-50 transition-colors accordion-toggle">
+                            <span class="flex items-center space-x-2 text-sm sm:text-base">
+                                <i class="fa-solid fa-train text-morandi-sage"></i>
+                                <span>搭乘輕軌 / 步行</span>
                             </span>
                             <i class="fa-solid fa-chevron-down text-xs text-stone-400 transition-transform duration-300 icon-arrow"></i>
                         </button>
-                        <div class="accordion-content px-5 bg-white">
-                            <div class="py-4 text-sm text-stone-600 leading-relaxed border-t border-stone-100">
-                                請搭乘輕軌至 <span class="no-wrap font-semibold text-stone-800">【陽光運動公園站】</span>，出站後直走安和路二段約 <span class="no-wrap">5分鐘</span> ，看見【有貓膩複合式餐飲】左轉安和路二段205巷直行約 <span class="no-wrap">4分鐘</span> ，即可到達會場。
+                        <div class="accordion-content px-4 sm:px-5 bg-white">
+                            <div class="py-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100">
+                                請搭乘輕軌至 <span class="font-semibold text-stone-800">【陽光運動公園站】</span>，出站後直走安和路二段約 <span class="font-semibold text-morandi-accent">5 分鐘</span>，看見 <span class="font-semibold text-stone-800">【有貓膩複合式餐飲】</span> 左轉安和路二段205巷直行約 <span class="font-semibold text-morandi-accent">4 分鐘</span>，即可到達會場。
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="border border-stone-200 rounded-xl overflow-hidden">
                         <button type="button" class="w-full px-5 py-4 text-left font-medium text-stone-700 flex justify-between items-center bg-stone-50/50 hover:bg-stone-50 transition-colors accordion-toggle">
                             <span class="flex items-center space-x-2">
@@ -276,59 +279,90 @@
                         </div>
                     </div>
 
+                    <!-- 捷運／公車 -->
                     <div class="border border-stone-200 rounded-xl overflow-hidden">
-                        <button type="button" class="w-full px-5 py-4 text-left font-medium text-stone-700 flex justify-between items-center bg-stone-50/50 hover:bg-stone-50 transition-colors accordion-toggle">
-                            <span class="flex items-center space-x-2">
-                                <i class="fa-solid fa-bus text-morandi-sage"></i>
-                                <span>搭乘公車</span>
+                        <button type="button" class="w-full px-4 sm:px-5 py-4 text-left font-medium text-stone-700 flex justify-between items-center bg-stone-50/50 hover:bg-stone-50 transition-colors accordion-toggle">
+                            <span class="flex items-center space-x-2 text-sm sm:text-base">
+                                <i class="fa-solid fa-train-subway text-morandi-sage"></i>
+                                <span>搭乘捷運 / 公車</span>
                             </span>
                             <i class="fa-solid fa-chevron-down text-xs text-stone-400 transition-transform duration-300 icon-arrow"></i>
                         </button>
-                        <div class="accordion-content px-5 bg-white">
-                            <div class="py-4 text-sm text-stone-600 leading-relaxed border-t border-stone-100">
-                                【公車站牌 - 安和路二段】路線建議
-                            <p>
-                                捷運<span class="no-wrap font-semibold text-stone-800">南勢角/環狀線</span> ：請搭乘至【景安站】轉乘公車 <span class="no-wrap font-semibold text-stone-800">202(區)、8、897(區)、橘1、橘9</span> 至 <span class="no-wrap font-semibold text-stone-800">【安和路二段】</span> 下車。
-                            </p>
-                            <p>
-                                捷運<span class="no-wrap font-semibold text-stone-800">新店線</span> ：請搭乘至【新店區公所站】轉乘８號公車 至 <span class="no-wrap font-semibold text-stone-800">【安和路二段】</span> 下車。
-                            </p>
-                             <p>
-                                捷運<span class="no-wrap font-semibold text-stone-800">文湖線</span> ：請搭乘至【松山機場站】轉乘913路線公車 至 <span class="no-wrap font-semibold text-stone-800">【安和路二段】</span> 下車。
-                            </p>
-                             <p>
-                                捷運<span class="no-wrap font-semibold text-stone-800">淡水信義線</span> ：請搭乘至【台北世貿/101站】一號出口轉乘935路線公車 至 <span class="no-wrap font-semibold text-stone-800">【安和路二段】</span> 下車。
-                            </p>
-                             <p>
-                                捷運<span class="no-wrap font-semibold text-stone-800">板南線</span> ：請搭乘至【台北車站】轉乘202（區）路線公車 或 【西門站】轉乘576、202（區）路線公車 至 <span class="no-wrap font-semibold text-stone-800">【安和路二段】</span> 下車。
-                            </p>
-                             <p>
-                                <span class="no-wrap font-semibold text-stone-800">下車後後直走安和路二段約3分鐘，看見【有貓膩複合式餐飲】左轉安和路二段205巷直行約 <span class="no-wrap">4分鐘</span> ，即可到達會場。</span> 
-                            </p>
+                        <div class="accordion-content px-4 sm:px-5 bg-white">
+                            <div class="py-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 space-y-3">
+                                <div class="space-y-2.5">
+                                    <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-2">
+                                        <div class="flex items-center gap-1.5 shrink-0">
+                                            <span class="inline-block w-2.5 h-2.5 rounded-full bg-orange-500"></span>
+                                            <span class="inline-block w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+                                            <span class="font-semibold text-stone-800">南勢角 / 環狀線：</span>
+                                        </div>
+                                        <span class="text-stone-600">請搭乘至 <strong class="text-stone-800">【景安站】</strong> 轉乘公車 <code class="bg-stone-100 px-1 py-0.5 rounded text-xs font-mono text-morandi-accent">202(區)</code>、<code class="bg-stone-100 px-1 py-0.5 rounded text-xs font-mono text-morandi-accent">8</code>、<code class="bg-stone-100 px-1 py-0.5 rounded text-xs font-mono text-morandi-accent">897(區)</code>、<code class="bg-stone-100 px-1 py-0.5 rounded text-xs font-mono text-morandi-accent">橘1</code>、<code class="bg-stone-100 px-1 py-0.5 rounded text-xs font-mono text-morandi-accent">橘9</code> 至 <strong class="text-stone-800">【安和路二段】</strong> 下車。</span>
+                                    </div>
+
+                                    <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-2">
+                                        <div class="flex items-center gap-1.5 shrink-0">
+                                            <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                                            <span class="font-semibold text-stone-800">新店線：</span>
+                                        </div>
+                                        <span class="text-stone-600">請搭乘至 <strong class="text-stone-800">【新店區公所站】</strong> 轉乘 <code class="bg-stone-100 px-1 py-0.5 rounded text-xs font-mono text-morandi-accent">8號公車</code> 至 <strong class="text-stone-800">【安和路二段】</strong> 下車。</span>
+                                    </div>
+
+                                    <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-2">
+                                        <div class="flex items-center gap-1.5 shrink-0">
+                                            <span class="inline-block w-2.5 h-2.5 rounded-full bg-amber-700"></span>
+                                            <span class="font-semibold text-stone-800">文湖線：</span>
+                                        </div>
+                                        <span class="text-stone-600">請搭乘至 <strong class="text-stone-800">【松山機場站】</strong> 轉乘 <code class="bg-stone-100 px-1 py-0.5 rounded text-xs font-mono text-morandi-accent">913路線公車</code> 至 <strong class="text-stone-800">【安和路二段】</strong> 下車。</span>
+                                    </div>
+
+                                    <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-2">
+                                        <div class="flex items-center gap-1.5 shrink-0">
+                                            <span class="inline-block w-2.5 h-2.5 rounded-full bg-red-600"></span>
+                                            <span class="font-semibold text-stone-800">淡水信義線：</span>
+                                        </div>
+                                        <span class="text-stone-600">請搭乘至 <strong class="text-stone-800">【台北世貿/101站】</strong> 一號出口轉乘 <code class="bg-stone-100 px-1 py-0.5 rounded text-xs font-mono text-morandi-accent">935路線公車</code> 至 <strong class="text-stone-800">【安和路二段】</strong> 下車。</span>
+                                    </div>
+
+                                    <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-2">
+                                        <div class="flex items-center gap-1.5 shrink-0">
+                                            <span class="inline-block w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                                            <span class="font-semibold text-stone-800">板南線：</span>
+                                        </div>
+                                        <span class="text-stone-600">請搭乘至 <strong class="text-stone-800">【台北車站】</strong> 轉乘 <code class="bg-stone-100 px-1 py-0.5 rounded text-xs font-mono text-morandi-accent">202（區）路線公車</code> 或 <strong class="text-stone-800">【西門站】</strong> 轉乘 <code class="bg-stone-100 px-1 py-0.5 rounded text-xs font-mono text-morandi-accent">576</code>、<code class="bg-stone-100 px-1 py-0.5 rounded text-xs font-mono text-morandi-accent">202（區）路線公車</code> 至 <strong class="text-stone-800">【安和路二段】</strong> 下車。</span>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 pt-3 border-t border-stone-100 text-stone-700">
+                                    下車後直走安和路二段約 <span class="font-semibold text-morandi-accent">3 分鐘</span>，看見 <strong class="text-stone-800">【有貓膩複合式餐飲】</strong> 左轉安和路二段205巷直行約 <span class="font-semibold text-morandi-accent">4 分鐘</span>，即可到達會場。
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                     <!-- 自行開車與停車資訊 -->
                     <div class="border border-stone-200 rounded-xl overflow-hidden">
-                        <button type="button" class="w-full px-5 py-4 text-left font-medium text-stone-700 flex justify-between items-center bg-stone-50/50 hover:bg-stone-50 transition-colors accordion-toggle">
-                            <span class="flex items-center space-x-2">
+                        <button type="button" class="w-full px-4 sm:px-5 py-4 text-left font-medium text-stone-700 flex justify-between items-center bg-stone-50/50 hover:bg-stone-50 transition-colors accordion-toggle">
+                            <span class="flex items-center space-x-2 text-sm sm:text-base">
                                 <i class="fa-solid fa-square-parking text-morandi-sage"></i>
-                                <span>自行開車與停車資訊 Parking</span>
+                                <span>自行開車與停車資訊</span>
                             </span>
                             <i class="fa-solid fa-chevron-down text-xs text-stone-400 transition-transform duration-300 icon-arrow"></i>
                         </button>
-                        <div class="accordion-content px-5 bg-white">
-                            <div class="py-4 text-sm text-stone-600 leading-relaxed border-t border-stone-100">
-                                - 飯店B1+B2 設有百餘平面停車位歡迎利用 <span class="no-wrap font-semibold text-stone-800">【來賓將愛車停妥後請隨身攜帶藍色票卡,以利餐後消磁可免費停車。】</span>。
-                                <p>
-                                - 以下另備有路線指引實景影片以及交通資訊圖，歡迎參考。<span class="no-wrap font-semibold text-stone-800">【https://www.platinumhotel.com.tw/zh-tw/news/content/3703】</span>。
-                                </p>
+                        <div class="accordion-content px-4 sm:px-5 bg-white">
+                            <div class="py-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 space-y-2.5">
+                                <ul class="list-disc list-inside space-y-1.5 text-stone-700">
+                                    <li>飯店 B1 + B2 設有百餘平面停車位歡迎利用 <strong class="text-morandi-accent">【來賓將愛車停妥後請隨身攜帶藍色票卡，以利餐後消磁可免費停車。】</strong></li>
+                                    <li>以下另備有路線指引實景影片以及交通資訊圖，歡迎參考：<br>
+                                        <a href="https://www.platinumhotel.com.tw/zh-tw/news/content/3703" target="_blank" class="text-morandi-accent underline hover:opacity-80 break-all inline-block mt-1">https://www.platinumhotel.com.tw/zh-tw/news/content/3703</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
                     <!-- 新增：拍照環節區塊 -->
             <div class="mt-12 bg-white rounded-2xl border border-morandi-tan/20 p-6 md:p-8 shadow-sm text-center relative overflow-hidden">
                 <div class="absolute -right-10 -bottom-10 w-28 h-28 bg-morandi-tan/10 rounded-full blur-xl pointer-events-none"></div>
@@ -388,14 +422,14 @@
 
                 <div>
                     <label for="entry_2097702107" class="block text-sm font-semibold text-morandi-dark mb-2">
-                        信箱 <span class="font-en font-normal text-xs text-morandi-tan tracking-wider uppercase ml-1">Email</span>
+                        電話 <span class="font-en font-normal text-xs text-morandi-tan tracking-wider uppercase ml-1">Phone</span>
                         <span class="text-rose-500">*</span>
                     </label>
                     <input type="tel"
                            name="entry.2097702107"
                            id="entry_2097702107"
                            required
-                           placeholder="請輸入您的聯絡信箱"
+                           placeholder="請輸入您的聯絡電話"
                            class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-morandi-tan focus:ring-2 focus:ring-morandi-tan/20 outline-none transition-all text-stone-700 bg-white">
                 </div>
 
