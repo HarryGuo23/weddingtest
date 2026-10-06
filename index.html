@@ -668,6 +668,10 @@
         // 動態連動邏輯：無法出席時隱藏人數與飲食
         const attendanceSelect = document.getElementById('entry_473265525');
         const attendanceDetails = document.getElementById('attendance-details');
+        const invitationTypeContainer = document.getElementById('invitation-type-container');
+        const invitationTypeSelect = document.getElementById('entry_invitation_type');
+        const emailContainer = document.getElementById('email-container');
+        const emailInput = document.getElementById('entry_email');
 
         function checkDynamicFields() {
             const attendanceVal = attendanceSelect.value;
@@ -676,15 +680,33 @@
                 attendanceDetails.querySelectorAll('select').forEach(el => {
                     el.disabled = true;
                 });
+                invitationTypeContainer.style.display = 'none';
+                invitationTypeSelect.disabled = true;
+                emailContainer.style.display = 'none';
+                emailInput.disabled = true;
             } else {
                 attendanceDetails.style.display = 'block';
                 attendanceDetails.querySelectorAll('select').forEach(el => {
                     el.disabled = false;
                 });
+                invitationTypeContainer.style.display = 'block';
+                invitationTypeSelect.disabled = false;
+                
+                if (invitationTypeSelect.value === '電子喜帖') {
+                    emailContainer.style.display = 'block';
+                    emailInput.disabled = false;
+                    emailInput.required = true;
+                } else {
+                    emailContainer.style.display = 'none';
+                    emailInput.disabled = true;
+                    emailInput.required = false;
+                    emailInput.value = '';
+                }
             }
         }
 
         attendanceSelect.addEventListener('change', checkDynamicFields);
+        invitationTypeSelect.addEventListener('change', checkDynamicFields);
         checkDynamicFields();
 
         // 網頁背景音樂控制邏輯
