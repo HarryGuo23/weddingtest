@@ -489,7 +489,20 @@
                            placeholder="請輸入您的電子信箱以接收電子喜帖"
                            class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-morandi-tan focus:ring-2 focus:ring-morandi-tan/20 outline-none transition-all text-stone-700 bg-white">
                 </div>
-                
+
+                <!-- 紙本喜帖收件地址動態輸入欄位 -->
+                <div id="address-container" class="hidden transition-all duration-300">
+                    <label for="entry_address" class="block text-sm font-semibold text-morandi-dark mb-2">
+                        紙本喜帖收件地址 <span class="font-en font-normal text-xs text-morandi-tan tracking-wider uppercase ml-1">ADDRESS FOR INVITATION</span>
+                        <span class="text-rose-500">*</span>
+                    </label>
+                    <input type="text"
+                           name="entry.1526025135"
+                           id="entry_address"
+                           placeholder="請輸入您的收件地址（含郵遞區號）"
+                           class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-morandi-tan focus:ring-2 focus:ring-morandi-tan/20 outline-none transition-all text-stone-700 bg-white">
+                </div>
+
                 <div id="attendance-details" class="space-y-6 transition-all duration-300">
                     <div>
                         <label for="entry_728519765" class="block text-sm font-semibold text-morandi-dark mb-2">
@@ -667,12 +680,14 @@
         });
 
         // 動態連動邏輯：無法出席時隱藏人數與飲食
-        const attendanceSelect = document.getElementById('entry_473265525');
+          const attendanceSelect = document.getElementById('entry_473265525');
         const attendanceDetails = document.getElementById('attendance-details');
         const invitationTypeContainer = document.getElementById('invitation-type-container');
         const invitationTypeSelect = document.getElementById('entry_invitation_type');
         const emailContainer = document.getElementById('email-container');
         const emailInput = document.getElementById('entry_email');
+        const addressContainer = document.getElementById('address-container');
+        const addressInput = document.getElementById('entry_address');
 
         function checkDynamicFields() {
             const attendanceVal = attendanceSelect.value;
@@ -685,6 +700,8 @@
                 invitationTypeSelect.disabled = true;
                 emailContainer.style.display = 'none';
                 emailInput.disabled = true;
+                addressContainer.style.display = 'none';
+                addressInput.disabled = true;
             } else {
                 attendanceDetails.style.display = 'block';
                 attendanceDetails.querySelectorAll('select').forEach(el => {
@@ -693,7 +710,8 @@
                 invitationTypeContainer.style.display = 'block';
                 invitationTypeSelect.disabled = false;
                 
-                if (invitationTypeSelect.value === '電子喜帖') {
+                const inviteVal = invitationTypeSelect.value;
+                if (inviteVal === '電子喜帖') {
                     emailContainer.style.display = 'block';
                     emailInput.disabled = false;
                     emailInput.required = true;
@@ -702,6 +720,17 @@
                     emailInput.disabled = true;
                     emailInput.required = false;
                     emailInput.value = '';
+                }
+
+                if (inviteVal === '紙本喜帖') {
+                    addressContainer.style.display = 'block';
+                    addressInput.disabled = false;
+                    addressInput.required = true;
+                } else {
+                    addressContainer.style.display = 'none';
+                    addressInput.disabled = true;
+                    addressInput.required = false;
+                    addressInput.value = '';
                 }
             }
         }
